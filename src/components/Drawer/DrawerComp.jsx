@@ -1,18 +1,13 @@
 import remove from "../../assets/img/btn-remove.svg";
 import arrow from "../../assets/img/arrow.svg";
 
-export const Drawer = ({onClose, items = []}) => {
+export const Drawer = ({ onClose, onRemove, items = [] }) => {
   return (
     <div className="overlay">
       <div className="drawer">
         <h2 className="mb-30 d-flex justify-between ">
           Корзина{" "}
-          <img
-            onClick={onClose}
-            className="cu-p"
-            src={remove}
-            alt="remove"
-          />
+          <img onClick={onClose} className="cu-p" src={remove} alt="remove" />
         </h2>
 
         <div className="items">
@@ -20,8 +15,7 @@ export const Drawer = ({onClose, items = []}) => {
             <div className="cartItem d-flex align-center mb-20">
               <div
                 style={{
-                  backgroundImage:
-                    `url(${obj.imageUrl})`,
+                  backgroundImage: `url(${obj.imageUrl})`,
                 }}
                 className="cartItemImg "
               ></div>
@@ -30,7 +24,12 @@ export const Drawer = ({onClose, items = []}) => {
                 <b>{obj.price} руб.</b>
               </div>
               <div>
-                <img className="removeBtn" src={remove} alt="remove" />
+                <img
+                  onClick={() => onRemove(obj.id)}
+                  className="removeBtn"
+                  src={remove}
+                  alt="remove"
+                />
               </div>
             </div>
           ))}
