@@ -2,24 +2,42 @@ import React from "react";
 import styles from "./Card.module.scss";
 import plus from "../../assets/img/btn-plus.svg";
 import cheked from "../../assets/img/btn-cheked.svg";
-import heart from "../../assets/img/heart.svg";
+import unliked from "../../assets/img/unliked.svg";
+import liked from "../../assets/img/liked.svg";
 
-export const Card = ({ title, price, imageUrl, onFavorite, onPlus }) => {
+export const Card = ({
+  id,
+  title,
+  price,
+  imageUrl,
+  onFavorite,
+  onPlus,
+  favorited = false,
+}) => {
   const [isAdded, setIsAdded] = React.useState(false);
+  const [isFavorite, setIsFavorite] = React.useState(favorited);
 
   const onClickPlus = () => {
-    onPlus({title, price, imageUrl});
+    onPlus({ title, price, imageUrl });
     setIsAdded(!isAdded);
   };
 
-  React.useEffect(() => {
-   
-  }, [isAdded]);
+  const onClickFavorite = () => {
+    onFavorite({id, title, price, imageUrl });
+    setIsFavorite(!isFavorite);
+  };
+
+  React.useEffect(() => {}, [isAdded]);
 
   return (
     <div className={styles.card}>
-      <div className={styles.favorite} onClick={onFavorite}>
-        <img width={18} height={18} src={heart} alt="unliked" />
+      <div className={styles.favorite} onClick={onClickFavorite}>
+        <img
+          width={18}
+          height={18}
+          src={isFavorite ? liked : unliked}
+          alt="unliked"
+        />
       </div>
       <img width={133} height={112} src={imageUrl} alt="sneakers" />
       <h5>{title}</h5>
