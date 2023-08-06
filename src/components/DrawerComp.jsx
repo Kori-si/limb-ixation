@@ -1,3 +1,4 @@
+
 import remove from "../assets/img/btn-remove.svg";
 import arrow from "../assets/img/arrow.svg";
 import empty from "../assets/img/empty.png";
@@ -15,7 +16,7 @@ export const Drawer = ({ onClose, onRemove, items = [] }) => {
           <div>
             <div className="items">
               {items.map((obj) => (
-                <div className="cartItem d-flex align-center mb-20">
+                <div key={(obj.id)} className="cartItem d-flex align-center mb-20">
                   <div
                     style={{
                       backgroundImage: `url(${obj.imageUrl})`,
