@@ -16,7 +16,6 @@ export const Card = ({
   onFavorite,
   onPlus,
   favorited = false,
-  added = false,
   loading = false,
 }) => {
   const { isItemAdded } = React.useContext(AppContext);
@@ -69,7 +68,7 @@ export const Card = ({
             <img
               className={styles.button}
               onClick={onClickPlus}
-              src={false ? cheked : plus}
+              src={isItemAdded(id) ? cheked : plus}
               alt="plus"
             />
           </div>
