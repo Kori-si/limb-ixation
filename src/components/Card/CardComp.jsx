@@ -1,12 +1,13 @@
 import React from "react";
 import ContentLoader from "react-content-loader";
-import AppContext from "../../pages/context";
+import AppContext from "../../context";
 
 import styles from "./Card.module.scss";
 import plus from "../../assets/img/btn-plus.svg";
 import cheked from "../../assets/img/btn-cheked.svg";
 import unliked from "../../assets/img/unliked.svg";
 import liked from "../../assets/img/liked.svg";
+
 
 export const Card = ({
   id,
@@ -29,7 +30,6 @@ export const Card = ({
     onFavorite({ id, title, price, imageUrl });
     setIsFavorite(!isFavorite);
   };
-
 
   return (
     <div className={styles.card}>

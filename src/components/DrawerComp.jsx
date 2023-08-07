@@ -1,8 +1,8 @@
 import React from "react";
-import AppContext from "../pages/context";
 import axios from "axios";
 
 import { Info } from "./Info";
+import { useCart } from "./hooks/useCart";
 
 import remove from "../assets/img/btn-remove.svg";
 import arrow from "../assets/img/arrow.svg";
@@ -12,7 +12,7 @@ import framed from "../assets/img/framed.jpg";
 const delay = (mc) => new Promise((resolve) => setTimeout(resolve, mc));
 
 export const Drawer = ({ onClose, onRemove, items = [] }) => {
-  const { cartItems, setCartItems } = React.useContext(AppContext);
+  const { cartItems, setCartItems, totalPrice } = useCart();
   const [orderId, setOrderId] = React.useState(null);
   const [isOrderComplete, setIsOrderComplete] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
@@ -84,12 +84,12 @@ export const Drawer = ({ onClose, onRemove, items = [] }) => {
                 <li>
                   <span>Итого:</span>
                   <div></div>
-                  <b>21 498 руб. </b>
+                  <b>{totalPrice} руб. </b>
                 </li>
                 <li>
-                  <span>Налог 5%: </span>
+                  <span>В том числе НДС 20%: </span>
                   <div></div>
-                  <b>1074 руб. </b>
+                  <b>{(Math.floor(totalPrice / 100) * 20)} руб. </b>
                 </li>
               </ul>
               <button
