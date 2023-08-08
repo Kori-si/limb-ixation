@@ -29,11 +29,11 @@ export const Orders = () => {
         <h1>Мои покупки</h1>
       </div>
       <div className="d-flex flex-wrap">
-        {orders.map((item, index) => (
+        {(isLoading ? [...Array(8)] : orders).map((item, index) => (
           <Card
             key={index}
             onFavorite={(obj) => onAddToFavorite(obj)}
-            onPlus={(obj) => onAddToCart(obj)}
+     
             loading={isLoading}
             {...item}
           />

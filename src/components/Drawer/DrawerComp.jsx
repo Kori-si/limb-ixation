@@ -1,17 +1,19 @@
 import React from "react";
 import axios from "axios";
 
-import { Info } from "./Info";
-import { useCart } from "./hooks/useCart";
+import { Info } from "../Info";
+import { useCart } from "../hooks/useCart";
 
-import remove from "../assets/img/btn-remove.svg";
-import arrow from "../assets/img/arrow.svg";
-import empty from "../assets/img/empty.png";
-import framed from "../assets/img/framed.jpg";
+import styles from "./Drawer.module.scss";
+
+import remove from "../../assets/img/btn-remove.svg";
+import arrow from "../../assets/img/arrow.svg";
+import empty from "../../assets/img/empty.png";
+import framed from "../../assets/img/framed.jpg";
 
 const delay = (mc) => new Promise((resolve) => setTimeout(resolve, mc));
 
-export const Drawer = ({ onClose, onRemove, items = [] }) => {
+export const Drawer = ({ onClose, onRemove, items = [], opened}) => {
   const { cartItems, setCartItems, totalPrice } = useCart();
   const [orderId, setOrderId] = React.useState(null);
   const [isOrderComplete, setIsOrderComplete] = React.useState(false);
@@ -43,8 +45,8 @@ export const Drawer = ({ onClose, onRemove, items = [] }) => {
   };
 
   return (
-    <div className="overlay">
-      <div className="drawer">
+    <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
+      <div className={styles.drawer}>
         <h2 className="mb-30 d-flex justify-between ">
           Корзина{" "}
           <img onClick={onClose} className="cu-p" src={remove} alt="remove" />
@@ -52,7 +54,7 @@ export const Drawer = ({ onClose, onRemove, items = [] }) => {
 
         {items.length > 0 ? (
           <div className="d-flex flex-column flex">
-            <div className="items">
+            <div className={styles.items}>
               {items.map((obj) => (
                 <div
                   key={obj.id}
@@ -79,7 +81,7 @@ export const Drawer = ({ onClose, onRemove, items = [] }) => {
                 </div>
               ))}
             </div>
-            <div className="cartTotalBlock">
+            <div className={styles.cartTotalBlock}>
               <ul>
                 <li>
                   <span>Итого:</span>
