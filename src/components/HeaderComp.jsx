@@ -15,7 +15,7 @@ export const Header = (props) => {
 
   return (
     <header className="d-flex justify-between align-center p-40">
-      <Link to="/">
+      <Link to="react-sneakers">
         <div className="d-flex align-center">
           <img width={40} height={40} src={logo} alt="logo" />
 
@@ -31,12 +31,12 @@ export const Header = (props) => {
           <span>{totalPrice} руб.</span>
         </li>
         <li className="mr-20 cu-p">
-          <Link to="/favorites">
+          <Link to="favorites">
             <img width={18} height={18} src={heart} alt="Закладки" />
           </Link>
         </li>
         <li>
-          <Link to="/orders">
+          <Link to="orders">
           <img width={18} height={18} src={user} alt="Пользователь" />
           </Link>
         </li>
