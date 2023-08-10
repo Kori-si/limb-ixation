@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Header } from "./components/HeaderComp";
+import { Header } from "./components/Header/HeaderComp";
 import { Home } from "./pages/Home";
 import { Drawer } from "./components/Drawer/DrawerComp";
 import { Favorites } from "./pages/Favorites";

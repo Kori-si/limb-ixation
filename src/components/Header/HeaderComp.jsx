@@ -1,27 +1,26 @@
 import React from "react";
+import styles from "./Header.module.scss";
 
 import { Link } from "react-router-dom";
-import { useCart } from "./hooks/useCart";
+import { useCart } from "../hooks/useCart";
 
-import logo from "../assets/img/logo.png";
-import cart from "../assets/img/cart.svg";
-import user from "../assets/img/user.svg";
-import heart from "../assets/img/heart.svg";
-
+import logo from "../../assets/img/logo.png";
+import cart from "../../assets/img/cart.svg";
+import user from "../../assets/img/user.svg";
+import heart from "../../assets/img/heart.svg";
 
 export const Header = (props) => {
   const { totalPrice } = useCart();
 
-
   return (
     <header className="d-flex justify-between align-center p-40">
-      <Link to="react-sneakers">
+      <Link to="limb-ixation">
         <div className="d-flex align-center">
-          <img width={40} height={40} src={logo} alt="logo" />
+          <img width={45} height={45} src={logo} alt="logo" />
 
           <div>
-            <h3 className="text-uppercase">React sneakers</h3>
-            <p className="opacity-5">Магазин лучших кроссовок</p>
+            <h3 className="text-uppercase">Limb Fixation</h3>
+            <p className="opacity-5">Магазин лучших изделий для фиксации конечностей</p>
           </div>
         </div>
       </Link>
@@ -37,7 +36,7 @@ export const Header = (props) => {
         </li>
         <li>
           <Link to="orders">
-          <img width={18} height={18} src={user} alt="Пользователь" />
+            <img width={18} height={18} src={user} alt="Пользователь" />
           </Link>
         </li>
       </ul>
