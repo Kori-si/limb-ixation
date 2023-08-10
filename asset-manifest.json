@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-sneakers/static/css/main.e323dd28.css",
-    "main.js": "/react-sneakers/static/js/main.4e053e7b.js",
-    "static/media/framed.jpg": "/react-sneakers/static/media/framed.b997b2a143b197da5f98.jpg",
-    "static/media/logo.png": "/react-sneakers/static/media/logo.9918681038074fec5106.png",
-    "static/media/liked.svg": "/react-sneakers/static/media/liked.5715a441c3797a738db9b8c2595bd5cd.svg",
-    "static/media/btn-cheked.svg": "/react-sneakers/static/media/btn-cheked.abb5c45afdc11ab9378f8a9b0a2ba1d3.svg",
-    "static/media/heart.svg": "/react-sneakers/static/media/heart.78818c6e43e069f23320b1c8c81a7028.svg",
-    "static/media/user.svg": "/react-sneakers/static/media/user.381202f7e3edbc1a00b14fbd5e529a32.svg",
-    "static/media/cart.svg": "/react-sneakers/static/media/cart.5113b08fb682dc25f3856ef704a6c05d.svg",
-    "index.html": "/react-sneakers/index.html",
-    "static/media/unliked.svg": "/react-sneakers/static/media/unliked.090f8faf6b203e39e70347764ffba9bd.svg",
-    "static/media/search.svg": "/react-sneakers/static/media/search.eed654da40378bb94b3d1b607448e6a2.svg",
-    "static/media/btn-remove.svg": "/react-sneakers/static/media/btn-remove.b1fef0aa93fbf25374f4991d23f900d8.svg",
-    "static/media/btn-plus.svg": "/react-sneakers/static/media/btn-plus.b88e94c67ea7ac0cfa69033241c96b8c.svg",
-    "static/media/arrow.svg": "/react-sneakers/static/media/arrow.5ece327e3ad1547c2fbb9133a0918be4.svg",
-    "main.e323dd28.css.map": "/react-sneakers/static/css/main.e323dd28.css.map",
-    "main.4e053e7b.js.map": "/react-sneakers/static/js/main.4e053e7b.js.map"
+    "main.css": "/limb-ixation/static/css/main.1ebb83c7.css",
+    "main.js": "/limb-ixation/static/js/main.88d68eab.js",
+    "static/media/framed.jpg": "/limb-ixation/static/media/framed.b997b2a143b197da5f98.jpg",
+    "static/media/logo.png": "/limb-ixation/static/media/logo.9918681038074fec5106.png",
+    "static/media/liked.svg": "/limb-ixation/static/media/liked.5715a441c3797a738db9b8c2595bd5cd.svg",
+    "static/media/btn-cheked.svg": "/limb-ixation/static/media/btn-cheked.abb5c45afdc11ab9378f8a9b0a2ba1d3.svg",
+    "static/media/heart.svg": "/limb-ixation/static/media/heart.78818c6e43e069f23320b1c8c81a7028.svg",
+    "static/media/user.svg": "/limb-ixation/static/media/user.381202f7e3edbc1a00b14fbd5e529a32.svg",
+    "static/media/cart.svg": "/limb-ixation/static/media/cart.5113b08fb682dc25f3856ef704a6c05d.svg",
+    "index.html": "/limb-ixation/index.html",
+    "static/media/unliked.svg": "/limb-ixation/static/media/unliked.090f8faf6b203e39e70347764ffba9bd.svg",
+    "static/media/search.svg": "/limb-ixation/static/media/search.eed654da40378bb94b3d1b607448e6a2.svg",
+    "static/media/btn-remove.svg": "/limb-ixation/static/media/btn-remove.b1fef0aa93fbf25374f4991d23f900d8.svg",
+    "static/media/btn-plus.svg": "/limb-ixation/static/media/btn-plus.b88e94c67ea7ac0cfa69033241c96b8c.svg",
+    "static/media/arrow.svg": "/limb-ixation/static/media/arrow.5ece327e3ad1547c2fbb9133a0918be4.svg",
+    "main.1ebb83c7.css.map": "/limb-ixation/static/css/main.1ebb83c7.css.map",
+    "main.88d68eab.js.map": "/limb-ixation/static/js/main.88d68eab.js.map"
   },
   "entrypoints": [
-    "static/css/main.e323dd28.css",
-    "static/js/main.4e053e7b.js"
+    "static/css/main.1ebb83c7.css",
+    "static/js/main.88d68eab.js"
   ]
 }
