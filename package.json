@@ -1,8 +1,8 @@
 {
-  "name": "react-sneakers",
+  "name": "limb-ixation",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://kori-si.github.io/react-sneakers" ,
+  "homepage":"https://kori-si.github.io/limb-ixation" ,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
