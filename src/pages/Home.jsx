@@ -36,7 +36,7 @@ export const Home = ({
     <div className="content p-40">
       <div className="d-flex align-center mb-40 justify-between">
         <h1>
-          {searchValue ? `Поиск по запросу: "${searchValue}"` : "Все кроссовки"}
+          {searchValue ? `Поиск по запросу: "${searchValue}"` : "Все товары"}
         </h1>
         <div className="search-block d-flex">
           <img src={search} alt="Search" />

@@ -89,7 +89,7 @@ body {
   width: 100%;
   height: 55px;
   border-radius: 18px;
-  background: #8cd137;
+  background: #00848C;
   border: 0;
   color: #fff;
   font-size: 16px;
@@ -103,11 +103,11 @@ body {
   }
 
   &:hover {
-    background: lighten($color: #8cd137, $amount: 7%);
+    background: lighten($color: #00848C, $amount: 7%);
   }
 
   &:active {
-    background: darken($color: #8cd137, $amount: 7%);
+    background: darken($color: #00848C, $amount: 7%);
   }
 }
 

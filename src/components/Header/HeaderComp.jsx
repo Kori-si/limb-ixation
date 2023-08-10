@@ -20,7 +20,7 @@ export const Header = (props) => {
 
           <div>
             <h3 className="text-uppercase">Limb Fixation</h3>
-            <p className="opacity-5">Магазин лучших изделий для фиксации конечностей</p>
+            <p className="opacity-5">Магазин лучших ортопедических изделий</p>
           </div>
         </div>
       </Link>

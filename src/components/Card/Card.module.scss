@@ -1,4 +1,7 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #eeeeee;
     padding: 30px;
     width: 220px;
@@ -43,7 +46,7 @@
     // background: #ffffff;
     // border: 0;
     // box-sizing: border-box;
-    // border-radius: 8px;
+    border-radius: 8px;
     // outline: none;
 
     cursor: pointer;
