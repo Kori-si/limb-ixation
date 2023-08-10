@@ -119,7 +119,7 @@ function App() {
         <Header onClickCart={() => setCartOpened(true)} />
         <Routes>
           <Route
-            path="react-sneakers"
+            path="limb-ixation"
             element={
               <Home
                 items={items}
